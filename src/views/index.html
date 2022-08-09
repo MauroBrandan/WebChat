@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/chat.css" />
 		<script defer src="/socket.io/socket.io.js"></script>
 		<script defer src="js/script.js"></script>
 		<title>WebChat</title>
@@ -13,5 +14,14 @@
 		<header>
 			<h1>WebChat</h1>
 		</header>
+
+		<main>
+			<div id="all-messages"></div>
+
+			<div class="send-message">
+				<input type="text" id="message" />
+				<button type="button" id="send-message" class="btn secondary">Enviar</button>
+			</div>
+		</main>
 	</body>
 </html>
